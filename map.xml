@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map proto="1.3.3">
+
+	<name>Reversi</name>
+	<version>0.1.0</version>
+	<objective>最後まで生き残れ！/Last one standing wins!</objective>
+	
+	<authors>
+		<author>EEE</author>
+	</authors>
+
+	<tntrun/>
+
+	<teams>
+		<team color="black" max="28">Player</team>
+	</teams>
+
+	<kits>
+		<kit name="player-kit">
+			<chestplate color="000000" locked="true">Leather Chestplate</chestplate>
+			<leggings color="ffffff" locked="true">Leather Leggings</leggings>
+			<potion duration="oo" amplifier="1">Jump</potion>
+		</kit>
+	</kits>
+
+	<spawns>
+		<spawn team="black" yaw="180" kit="player-kit">
+			<cuboid min="-8,18,4" max="-3,18,9"/>
+			<cuboid min="4,18,4" max="9,18,9"/>
+		</spawn>
+		<default yaw="0" fly="true">
+			<cuboid min="-1,30,-1" max="2,30,2"/>
+		</default>
+	</spawns>
+
+	<include src="tutorial.xml"/>
+	<tutorial>
+		<stage title="TNT Run">
+			<message>
+				<line>This map is a `a`lTNT Run `rmap.</line>
+				<line>The objective is to be the last one alive.</line>
+			</message>
+			<message lang="ja_JP">
+				<line>このマップは `a`lTNT Run`r マップです。</line>
+				<line>他の参加者を蹴落し最後まで生存することが目標になります。</line>
+			</message>
+		</stage>
+	</tutorial>
+</map>
