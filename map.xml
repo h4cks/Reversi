@@ -2,7 +2,7 @@
 <map proto="1.3.3">
 
 	<name>Reversi</name>
-	<version>0.1.0</version>
+	<version>0.2.0</version>
 	<objective>最後まで生き残れ！/Last one standing wins!</objective>
 	
 	<authors>
@@ -12,7 +12,7 @@
 	<tntrun/>
 
 	<teams>
-		<team color="black" max="28">Player</team>
+		<team color="dark gray" max="28">Player</team>
 	</teams>
 
 	<kits>
@@ -24,9 +24,9 @@
 	</kits>
 
 	<spawns>
-		<spawn team="black" yaw="180" kit="player-kit">
-			<cuboid min="-8,18,4" max="-3,18,9"/>
-			<cuboid min="4,18,4" max="9,18,9"/>
+		<spawn team="dark gray" yaw="0" kit="player-kit">
+			<cuboid min="-5,6,-5" max="-3,6,-3"/>
+			<cuboid min="4,6,-5" max="6,6,-3"/>
 		</spawn>
 		<default yaw="0" fly="true">
 			<cuboid min="-1,30,-1" max="2,30,2"/>
