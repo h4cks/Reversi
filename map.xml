@@ -2,7 +2,7 @@
 <map proto="1.3.3">
 
 	<name>Reversi</name>
-	<version>0.3.0</version>
+	<version>0.3.2</version>
 	<objective>最後まで生き残れ！/Last one standing wins!</objective>
 	
 	<authors>
@@ -19,6 +19,7 @@
 		<kit name="player-kit">
 			<chestplate color="000000" locked="true">Leather Chestplate</chestplate>
 			<leggings color="ffffff" locked="true">Leather Leggings</leggings>
+			<item slot="0" damage="16387" name="Jump potion" potions="jump:100:3:false" bind="true">potion</item>
 		</kit>
 	</kits>
 
@@ -42,6 +43,16 @@
 			<message lang="ja_JP">
 				<line>このマップは `a`lTNT Run`r マップです。</line>
 				<line>他の参加者を蹴落し最後まで生存することが目標になります。</line>
+			</message>
+		</stage>
+		<stage title="Potion">
+			<message>
+				<line>You will gain `a`la potion of leaping`r at the start.</line>
+				<line>Make effective use of the potion, good luck!</line>
+			</message>
+			<message lang="ja_JP">
+				<line>スタート時に`a`l跳躍力上昇のポーション`rが配布されます。</line>
+				<line>うまく有効活用して最後まで生き延びましょう。</line>
 			</message>
 		</stage>
 	</tutorial>
